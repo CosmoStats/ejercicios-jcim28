@@ -1,0 +1,27 @@
+# Entornos virtuales Python
+sklearn-env/
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de sistema macOS
+.DS_Store
+
+# Datos descargados de AstroML
+astroML_data/
+
+# Archivos temporales de editores
+.vscode/
+.idea/
+
+# Logs
+*.log
