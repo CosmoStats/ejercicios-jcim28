@@ -1,0 +1,27 @@
+theory:
+  classy:
+    extra_args:
+      N_ncdm: 1
+      N_ur: 2.0328
+likelihood:
+  bao.sixdf_2011_bao: null
+  bao.sdss_dr7_mgs: null
+params:
+  omega_b:
+    value: 0.0224
+  omega_cdm:
+    prior:
+      min: 0.05
+      max: 0.3
+  H0:
+    prior:
+      min: 40
+      max: 100
+  n_s:
+    value: 0.965
+  A_s:
+    value: 2.1e-09
+sampler:
+  mcmc:
+    covmat: auto
+output: test_bao
