@@ -1,0 +1,50 @@
+theory:
+  classy:
+    ignore_obsolete: true
+likelihood:
+  bao.sixdf_2011_bao: null
+  bao.sdss_dr7_mgs: null
+  bao.sdss_dr16_baoplus_lyauto: null
+  bao.sdss_dr16_baoplus_lyxqso: null
+  sn.pantheon: null
+params:
+  N_ncdm:
+    value: 1
+  N_ur:
+    value: 3.0328
+  omega_b:
+    prior:
+      min: 0.018
+      max: 0.026
+    ref:
+      dist: norm
+      loc: 0.022
+      scale: 0.001
+  omega_cdm:
+    prior:
+      min: 0.15
+      max: 0.35
+    proposal: 0.01
+    ref:
+      dist: norm
+      loc: 0.25
+      scale: 0.01
+  H0:
+    prior:
+      min: 60
+      max: 80
+    proposal: 0.1
+    ref:
+      dist: norm
+      loc: 70
+      scale: 2
+  n_s:
+    value: 0.965
+  A_s:
+    value: 2.1e-09
+sampler:
+  mcmc:
+    covmat: auto
+    Rminus1_stop: 0.005
+stop_at_error: true
+output: CDM_sn+bao
